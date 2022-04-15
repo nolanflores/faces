@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function nextImg(){
+                var ind = (Math.floor(Math.random() * 10)).toString();
+                img.src = "photos/"+ind+".jpg"
+            }
+        </script>
+    </head>
+    <body>
+        <style>
+            body {background-color: royalblue;}
+            img {display: block; margin: 0 auto;}
+        </style>
+        <center>
+        <button onclick="nextImg()"style="font-size:50px">Next Random Face</button>
+        </center>
+        <script>
+            var ind = (Math.floor(Math.random() * 10)).toString();
+            var img = document.createElement("img");
+            img.src = "photos/"+ind+".jpg";
+            document.body.appendChild(img);
+        </script>
+        
+    </body>
+</html>
